@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>時間練習</h1>
+<h2>時間判定(まずはhourのみ)</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+	
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script type="text/javascript">
+	var hour = new Date().getHours();
+
+	if (hour < 4 && hour >= 23 ){
+		window.alert('現在' + hour + '時台。さすがに寝てるだろ（慢心）');
+	}else if(hour === 5){
+		window.alert('おはよう！朝' + hour + '時に、何してるんだい？');
+	}else if(hour >= 6 && hour < 12){
+		window.alert('現在' + hour + '時台。御前なう（盛大な誤字）');
+	}else if(hour >= 12 && hour < 18){
+		window.alert('現在' + hour + '時台。午後。仕事終わんねーかなー');
+	}else if(hour >= 18 && hour < 23){
+		window.alert('現在' + hour + '時台。働きたくないでござる！絶対に働きたくないでござる！');
+	}else{
+		window.alert('影時間か…（起こりえない時間帯だよ！）');
+	}
+</script>
+
+</body>
+</html>
